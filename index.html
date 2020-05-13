@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+
+<style>
+
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;				
+font-family:"sans-serif";
+}
+
+.wrapper
+{
+width:100vw;
+height:100vh;
+background-color:#27ae60;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.wrapper form
+{
+width:30%;
+height:400px;
+background-color:#fff;	
+padding:30px 20px
+}
+
+form label,form input
+{
+display:block;			
+}
+
+form input[type=text], 
+form input[type=password]
+{
+width:100%;		
+padding:12px 10px;
+background-color:#f1f3f6;
+outline:none;
+border:none;
+}
+
+form label, 
+form input, 
+form submit, 
+form button
+{
+margin-bottom:12px;			
+}
+
+input[type=submit]
+{
+background-color:dodgerblue;				
+border:none;
+outline:none;
+padding:8px 10px;
+color:#fff;
+font-size:12px;
+box-sizing:border-box;
+text-transform:uppercase;
+font-weight:bold;
+border-radius:5px;
+box-shadow:1px 1px 8px rgba(0,0,0,0.2);
+}
+
+
+.social-login-btn button
+{
+display:block;
+width:100%;
+padding:10px;
+text-transform:uppercase;
+font-weight:bold;
+transition:0.4s all
+cursor:pointer;
+}
+
+.social-login-btn
+{
+margin-top:65px;				
+}
+
+.social-login-btn button a
+{
+text-decoration:none;			
+color:white;
+}
+
+.social-btn-fb
+{			
+background-color:dodgerblue;
+border:none;
+border-radius:5px;
+outline:none;
+}
+
+.social-btn-google
+{
+background-color:#2ecc71;
+border-radius:5px;
+border:none;
+outline:none;
+}
+
+.social-login-btn button:hover
+{
+opacity:0.7;
+}
+</style>
+
+<meta charset="utf-8">
+</head>
+<body>
+
+<div class="wrapper">
+
+<form>
+<label for="UserName">UserName</label>
+<input type="text" id="UserName" placeholder="Enter Your UserName">
+<label for="PassWord">Password</label>
+<input type="password" id="PassWord" placeholder="Enter Your Password">
+<input type="submit" value="Login">
+
+<div class="social-login-btn">
+<button class="social-btn-fb"><a href="https://m.facebook.com/login/">Login With Facebook</a></button>
+<button class="social-btn-google"><a href="https://accounts.google.com/signin/v2/identifier?service=CPanel&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Login With Google</a></button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
